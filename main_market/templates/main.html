@@ -7,5 +7,11 @@
 <body>
     <h1>Привет дружище</h1>
 <p>Расскажи что-нибудь о себе!</p>
+    <div>
+        {% for product in products %}
+        <b>{{product.name}}</b>
+        <p>{{product.price}}</p>
+        {% endfor %}
+    </div>
 </body>
 </html>
